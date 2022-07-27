@@ -1,0 +1,32 @@
+:root {
+  --error-color: rgb(223, 208, 0);
+  --btn-hover: rgba(196, 176, 0, 0.658);
+}
+
+body {
+  background: rgb(70, 45, 94);
+  color:aliceblue;
+}
+
+.form .error-message {
+  color: var(--error-color);
+  font-style: italic;
+  display: none;
+}
+
+.form .show-error-message .error-message {
+  display: block;
+}
+
+.form .show-error-message input[type] {
+  /* border-color: var(--error-color); */
+  border: 3px solid var(--error-color);
+}
+
+.btn {
+  background: var(--error-color);
+}
+
+.btn:hover {
+  background: var(--btn-hover);
+}
