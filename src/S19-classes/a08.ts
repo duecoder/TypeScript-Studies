@@ -5,7 +5,7 @@ export abstract class Personagem {
     protected name: string,
     protected attack: number,
     protected life: number,
-  ) { }
+  ) { } // eslint-disable-line
 
   doAttack(personagem: Personagem): void {
     this.speaks();
@@ -17,7 +17,7 @@ export abstract class Personagem {
     console.log(`${this.emoji} ${this.name} agora tem ${this.life} de vida...`);
   }
 
-  abstract speaks(): void { }
+  speaks(): void { } // eslint-disable-line
 }
 
 export class Guerreira extends Personagem {
